@@ -13,7 +13,7 @@
 }
 
 .todoApp {
-    width: 100%;
+    width: 80%; 
     max-width: 540px;
     background: #1a1a1a;
     margin: 100px auto 20px;
@@ -69,15 +69,15 @@ button {
 button:hover {
     background: #ff9900;
 }
-
 ul li {
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 12px 30px; 
     user-select: none;
     cursor: pointer;
     position: relative;
     color: #fff;
+    z-index: 2;
 }
 
 ul li::before {
@@ -89,17 +89,19 @@ ul li::before {
     background-image: url(images/unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 50%;
     left: 8px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
 }
 
 ul li.checked {
     color: #777;
     text-decoration: line-through;
-}
-
-ul li.checked::before {
-    background-image: url(images/checked.png);
 }
 
 ul li span {
@@ -119,26 +121,9 @@ ul li span:hover {
     background: #2b2b2b;
 }
 
-/* Media Query for Mobile Devices */
 @media only screen and (max-width: 600px) {
     .todoApp {
-        padding: 20px;
-    }
-
-    .row {
-        flex-direction: column;
-        padding-left: 0;
-    }
-
-    input {
-        margin-bottom: 10px;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    ul li {
-        padding: 12px;
+        width: 90%; 
     }
 }
+
