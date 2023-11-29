@@ -52,9 +52,7 @@ input {
     background: #2b2b2b;
     padding: 10px;
     color: #fff;
-    margin-right: 10px; /* Add margin to separate input and button */
 }
-
 button {
     border: none;
     outline: none;
@@ -131,14 +129,11 @@ ul li span:hover {
 
     .row {
         flex-direction: column; /* Change flex direction for smaller screens */
-    }
-
-    input {
-        margin-right: 0; /* Remove margin for smaller screens */
-        margin-bottom: 10px; /* Add margin to separate input and button */
+        
     }
 
     button {
-        width: 100%; /* Set button width to 100% for smaller screens */
+        width: auto; /* Set button width to 100% for smaller screens */
+        margin-top: 10px; /* Add margin to the button for spacing */
     }
 }
