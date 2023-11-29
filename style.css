@@ -52,13 +52,12 @@ input {
     background: #2b2b2b;
     padding: 10px;
     color: #fff;
-    margin-right: 10px; /* Add margin to separate input and button */
 }
 
 button {
     border: none;
     outline: none;
-    padding: 16px 30px; /* Adjusted button padding */
+    padding: 16px 50px;
     background: #ffcc00;
     color: #1a1a1a;
     font-size: 16px;
@@ -70,7 +69,6 @@ button {
 button:hover {
     background: #ff9900;
 }
-
 ul li {
     list-style: none;
     font-size: 17px;
@@ -123,21 +121,8 @@ ul li span:hover {
     background: #2b2b2b;
 }
 
-/* Media Query for Smaller Screens */
 @media only screen and (max-width: 600px) {
     .todoApp {
         width: 90%; 
-    }
-
-    
-
-    input {
-        margin-right: 0; /* Remove margin for smaller screens */
-        margin-bottom: 10px; /* Add margin to separate input and button */
-        width:  auto;
-    }
-
-    button {
-        width: auto; /* Set button width to 100% for smaller screens */
     }
 }
